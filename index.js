@@ -1,7 +1,7 @@
 function calculate() {
     var profile1 = document.getElementById("profile1").value;
     var profile2 = document.getElementById("profile2").value;
-    var apiURL = "http://127.0.0.1";
+    var apiURL = "https://anilist-diff.herokuapp.com/";
     console.log("".concat(apiURL, "/?profile1=").concat(profile1, "&profile2=").concat(profile2, " "));
     fetch("".concat(apiURL, "/?profile1=").concat(profile1, "&profile2=").concat(profile2, " "))
         .then(function (response) { return response.json(); })
